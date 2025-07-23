@@ -5,7 +5,7 @@
 - Non-Functional: High throughput, low latency (<50ms), high availability.
 
 ## Architecture Diagram
-![Key-Value Store Diagram](key-value-store-diagram.png)
+![Key-Value Store Diagram](key-value-store-design.png)
 
 ## Components
 - Client: Browser/app.
