@@ -1,48 +1,24 @@
-
 # Key-Value Store System Design
 
-## 📌 Requirements
+## Requirements
+- Functional: Store/retrieve/update key-value pairs.
+- Non-Functional: High throughput, low latency (<50ms), high availability.
 
-### ✅ Functional
-- Store, retrieve, update key-value pairs.
-
-### ✅ Non-Functional
-- High throughput.
-- Low latency (<50ms).
-- High availability.
-
----
-
-## 🗺️ Architecture Diagram
-
+## Architecture Diagram
 ![Key-Value Store Diagram](key-value-store-diagram.png)
 
----
+## Components
+- Client: Browser/app.
+- Load Balancer: AWS ELB/Nginx.
+- App Servers: Java/Spring Boot.
+- Key-Value Store: Redis/DynamoDB (sharded).
+- Secondary Nodes: Replicas for availability.
 
-## 🧩 Components
+## Design Choices
+- Redis: Low latency for in-memory storage.
+- Sharding: By key hash for scalability.
+- Replication: Ensures high availability.
 
-- **Client:** Browser or mobile app sending HTTP requests.
-- **Load Balancer:** AWS ELB or Nginx to distribute traffic.
-- **App Servers:** Java / Spring Boot for handling requests.
-- **Key-Value Store:** Redis (in-memory) or DynamoDB (persistent), with **sharding**.
-- **Secondary Nodes:** Replication (e.g., Redis replicas, DynamoDB global tables) for high availability.
-
----
-
-## 🛠️ Design Choices
-
-- **Redis**: Chosen for ultra-low-latency in-memory storage.
-- **Sharding**: Partition data by hash of the key to scale horizontally.
-- **Replication**: Synchronous or asynchronous replication to ensure high availability and fault tolerance.
-
----
-
-## 💻 Java Implementation
-
-- **Spring Boot REST APIs**
-  - `PUT /key/value` → Store/update value.
-  - `GET /key` → Retrieve value.
-
-- **Spring Data Redis** (or DynamoDB SDK)
-  - Used for seamless integration with Redis or DynamoDB.
-  - Leverages existing Java and Spring ecosystem experience.
+## Java Implementation
+- Spring Boot APIs (PUT /key/value, GET /key).
+- Spring Data Redis, leveraging my Java experience.
