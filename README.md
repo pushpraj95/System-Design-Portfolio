@@ -10,3 +10,5 @@ A collection of system design projects for my transition to a Software Architect
 - [System Design Day 4: Event-Driven and Payment Systems](System_Design_Day_4_Event-Driven_and_Payment_Systems.pdf)
   - [Event-Driven System Design](event-driven-system-design.md)
   - [Payment System Design](payment-system-design.md)
+- [System Design Day 5:News Feed System](System_Design_Day_5_News_Feed_System.pdf)
+  - [News Feed System](news_feed_design.md)
