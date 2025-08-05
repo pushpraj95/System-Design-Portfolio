@@ -18,3 +18,5 @@ A collection of system design projects for my transition to a Software Architect
   - [CDN System Diagram](cdn-system-design.md)
 - [System Design Day 8: Chat System Design](System_Design_Day8_Chat_system_design.pdf)
   - [Chat System Design](chat-system-design.md)
+- [System Design Day 9: Search Engine System Design](System_Design_Day9_Search_Engine_System_Design.pdf)
+  - [Search Engine System Design](search_engine_system_design.md)
