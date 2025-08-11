@@ -23,4 +23,6 @@ A collection of system design projects for my transition to a Software Architect
 - [System Design Day 10: Interview Preparations](System_Design_Day_10_Interview_Prep.pdf)
   - [E-Commerce Recommendation System Design](recommendation-system-design.md)
 - [System Design Day 11: Ride-Sharing system design](System_Design_Day_11_Ride-Sharing_system.pdf)
-  - [Ride-Sharing system designn](ride-sharing-design.md)
+  - [Ride-Sharing system design](ride-sharing-design.md)
+- [System Design Day 12: Video Stream system design](System_Design_Day_12_Video_Stream_Sytem.pdf)
+  - [Video Streaming system design](video-streaming-design.markdown)
